@@ -1,8 +1,8 @@
 package com.sapient.perCapitalIncome.util;
 
 public class Constants {
-	public static final String INPUT_FILE_PATH = "C:\\Users\\sidvani\\Documents\\workspace-spring-tool-suite-4-4.14.1.RELEASE\\perCapitalIncome\\src\\main\\resources\\Sample_Input.csv";
-	public static final String OUTPUT_FILE_PATH = "C:\\Users\\sidvani\\Documents\\workspace-spring-tool-suite-4-4.14.1.RELEASE\\perCapitalIncome\\src\\main\\resources\\ouput.csv";
+	public static final String INPUT_FILE_PATH = "Sample_Input.csv";
+	public static final String OUTPUT_FILE_PATH = "ouput.csv";
 
 	public static final String OUTPUT_HEAD_COLUMNS = "City\\Country,Gender,Average Income(USD)";
 
