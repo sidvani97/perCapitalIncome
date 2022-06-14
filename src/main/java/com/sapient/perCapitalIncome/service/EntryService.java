@@ -18,7 +18,8 @@ public class EntryService {
 
 	public void execute() {
 		EntryService es = new EntryService();
-		File file = es.openFile(Constants.INPUT_FILE_PATH);
+		File file = es.openFile(getClass().getClassLoader()
+                .getResource(Constants.INPUT_FILE_PATH).getFile());
 		
 		if(file.exists()) {
 			CSVParserService csvParserService=new CSVParserService();
@@ -27,7 +28,8 @@ public class EntryService {
 			
 		}
 		GenerateReportService generateReportService=new GenerateReportService();
-		generateReportService.writeReport(incomeList, Constants.OUTPUT_FILE_PATH);
+		generateReportService.writeReport(incomeList, getClass().getClassLoader()
+                .getResource(Constants.OUTPUT_FILE_PATH).getFile());
 	
 	}
 
